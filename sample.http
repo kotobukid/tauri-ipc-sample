@@ -1,0 +1,11 @@
+POST http://localhost:3000/CreateExcel
+Content-Type: Application/Json
+
+{
+    "excelName":"書き出したいエクセル名",
+    "cell":
+    {
+        "D8":"D8に入れたい内容",
+        "F8":"F8に入れたい内容"
+    }
+}
