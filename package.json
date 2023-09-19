@@ -1,9 +1,11 @@
 {
   "name": "nodexlsx",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "tsc" : "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +13,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "typescript": "^5.2.2",
     "xlsx-populate": "^1.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.2",
+    "@types/xlsx-populate": "git+https://github.com/JanLoebel/types-xlsx-populate.git"
   }
 }
