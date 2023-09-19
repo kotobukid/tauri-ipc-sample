@@ -3,3 +3,4 @@ node_modules
 .~lock*
 
 try_ipc/target
+/try_ipc/tmp/test123.xlsx
