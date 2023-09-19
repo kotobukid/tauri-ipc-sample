@@ -30,7 +30,7 @@ process.stdin.on('data', async (data: string) => {
         const dir_created = await checkAndCreateDir("./tmp/");
 
         //. 出力先(Herokuではtmp以下にファイルを一時保存する)
-        const outputFilePath = './tmp/' + json.excelName + '.xlsx';
+        const outputFilePath = './tmp/' + json.excel_name + '.xlsx';
 
         const book = await XlsxPopulate.fromFileAsync(templateFile)
 

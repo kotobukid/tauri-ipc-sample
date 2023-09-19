@@ -34,7 +34,7 @@ process.stdin.on('data', (data) => __awaiter(void 0, void 0, void 0, function* (
         const templateFile = './01.xlsx';
         const dir_created = yield checkAndCreateDir("./tmp/");
         //. 出力先(Herokuではtmp以下にファイルを一時保存する)
-        const outputFilePath = './tmp/' + json.excelName + '.xlsx';
+        const outputFilePath = './tmp/' + json.excel_name + '.xlsx';
         const book = yield XlsxPopulate.fromFileAsync(templateFile);
         // 0番目のsheetに書き込む
         const sheet1 = book.sheet(0);

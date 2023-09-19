@@ -14,7 +14,7 @@ async function greet() {
 }
 
 const write_excel = async () => {
-    const result = await invoke("write_excel");
+    const result = await invoke("write_excel", {values: [name.value]});
     console.log(result);
 
     const filename = "download.xlsx";
